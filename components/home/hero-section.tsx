@@ -12,7 +12,7 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-secondary/30 via-background to-background" />
 
       {/* Particle Sphere */}
-      <div className="">
+      <div className="flex">
         <ParticleSphere />
       </div>
 
