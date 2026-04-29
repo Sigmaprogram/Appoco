@@ -38,7 +38,11 @@ const values = [
 ];
 
 const team = [
-  { name: "pending to be hired", role: "pending to be hired", image: "AT" },
+  {
+    name: "Abril Echavaria",
+    role: "Relationship Manager",
+    image: "/abril.png",
+  },
 ];
 
 export default function AboutPage() {
@@ -183,10 +187,14 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {team.map((member) => (
               <div key={member.name} className="text-center group">
-                <div className="aspect-square rounded-2xl bg-secondary flex items-center justify-center mb-4 group-hover:bg-foreground transition-colors duration-300">
-                  <span className="text-2xl font-bold text-muted-foreground group-hover:text-background transition-colors duration-300">
-                    {member.image}
-                  </span>
+                <div className="aspect-square rounded-2xl bg-secondary  mb-4">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    width={100}
+                    height={100}
+                    className="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 <h3 className="font-semibold">{member.name}</h3>
                 <p className="text-sm text-muted-foreground">{member.role}</p>
