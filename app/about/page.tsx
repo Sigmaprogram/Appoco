@@ -45,7 +45,7 @@ const team = [
   },
   {
     name: "Ruben Antonio Echavarria",
-    role: "Customer Success Manager",
+    role: "Customer Success Manager.",
     image: "/ruben.jpeg",
   },
 ];
