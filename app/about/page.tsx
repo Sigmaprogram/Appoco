@@ -43,6 +43,11 @@ const team = [
     role: "Relationship Manager",
     image: "/abril.png",
   },
+  {
+    name: "Ruben Antonio Echavarria",
+    role: "Customer Success Manager",
+    image: "/ruben.jpeg",
+  },
 ];
 
 export default function AboutPage() {
